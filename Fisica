@@ -1,0 +1,54 @@
+#if !defined(FISICA)
+#define FISICA
+
+/** @brief Calcula la ley de Hooke
+ * @param k Constante de resorte
+ * @param l Longitud de resorte
+ * @returns k * l
+ */
+double hooke(const double& k, const double& l);
+
+/** @brief Calcula la 2da ley de Newton
+ * @param a Aceleracion
+ * @param m Masa
+ * @returns m * a
+ */
+double newtontwo(const double& a, const double& m);
+
+/** @brief Calcula el momento de fuerza (Torque)
+ * @param F Módulo del vector fuerza
+ * @param M Módulo del vector distancia
+ * @returns F * M
+ */
+double torque(const double& F, const double& M);
+
+/** @brief Capacidad calorifica en C°
+ *  @param Q Incremento de calor en calorias 
+ *  @param T  Incremento de temperatura en C°
+ *  @returns double Q/T en C°
+ */
+double calor(const double& Q, const double& T);
+
+/** @brief Calcula la longitud de onda en metros 
+ *  @param v Velocidad de onda  expresada en m/s
+ *  @param f  Frecuencia espresada en Hz
+ *  @returns double v/f en m
+ */
+double longitud(const double& v, const double& f);
+
+/** @brief Calcula la aceleracion
+ *  @param velocidadInicial Velocidad inicial
+ *  @param velocidadFinal  Velocidad Final
+ *  @param tiempo  Tiempo
+ *  @returns (vf-vi)/t
+ */
+double aceleracion(const double& velocidadInicial, const double& velocidadFinal ,const double& tiempo);
+
+/** @brief Calcula el rendimiento
+ *  @param energia_totall Energia Total
+ *  @param energia_Util  Energia Util
+ *  @returns eu/eT
+ */
+double rendimiento(const double& energia_total ,const double& energia_Util);
+
+#endif
