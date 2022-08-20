@@ -1,7 +1,7 @@
 # I7
 ##  Compilación de bibliotecas dinámica y estática
 ### Biblioteca estática
-Para compilar bibliotecas estáticas se deben utilizar los comandos:
+Para compilar bibliotecas estáticas se deben utilizar los comandos:  
 **g++ -c . Ruta del archivo .cc -o Ruta del archivo.o -I ruta de la biblioteca**
 Por ejemplo: g++ -c .\src\calor.cc -o .\obj\hooke.o -I .\include
 Donde -c obtiene el código maquina del archivo .c, -o se emplea para el Código salida y -I Indica el directorio de la cabecera necesaria para compilar.
@@ -39,14 +39,14 @@ donde -L indica la ruta de la biblioteca con las funciones y -l indica el nombre
 
 ## Estructura de directorios 
 C:.
-│   main.cc
-│
-├───app
-│       testdll.exe
-│       teststatic.exe
-│       test_AceleracionRendimiento.cc
-│       test_CalorLongitudOnda.cc
-│       test_NewtonHookeTorque.cc
+│   main.cc  
+│  
+├───app  
+│       testdll.exe  
+│       teststatic.exe  
+│       test_AceleracionRendimiento.cc  
+│       test_CalorLongitudOnda.cc  
+│       test_NewtonHookeTorque.cc  
 │
 ├───include
 │       Fisica
@@ -88,19 +88,19 @@ Para utilizar estas fórmulas es necesario poner el nombre de la función y los 
   -*calor (double incremento de calor, double incremento de temperatura)*
   - return Q/T
 3. Ley de Hook
-  -*hooke (double contante de resorte, double longitud de resorte)*
-  -return k * l
+  - *hooke (double contante de resorte, double longitud de resorte)*
+  - return k * l
 4. Longitud de onda 
-  -*longitud ( double velocidad de la onda, double frecuencia)*
-  -return v/f
+  - *longitud ( double velocidad de la onda, double frecuencia)*
+  - return v/f
 5. Seguna ley de Newton
-  -*newtontwo (double aceleracion, double masa)*
-  -return m * a
+  - *newtontwo (double aceleracion, double masa)*
+  - return m * a
 7. Rendimiento
-  -*rendimiento (double energia toatl, double enregia util)* 
-  -return eu/eT
+  - *rendimiento (double energia toatl, double enregia util)* 
+  - return eu/eT
 9. Torque
-  -*torque (double vector fuerza, double vector distancia)
-  -return m * f
+  - *torque (double vector fuerza, double vector distancia)
+  - return m * f
   
 
