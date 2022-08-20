@@ -40,8 +40,7 @@ donde -L indica la ruta de la biblioteca con las funciones y -l indica el nombre
 ## Estructura de directorios 
 **Este fue el directorio utilizado para la creación de las bibliotecas. No es la estructura del directorio del repositorio**
 
-C:.
-
+C:.  
 │   main.cc  
 │  
 ├───app  
@@ -88,7 +87,7 @@ Para utilizar estas fórmulas es necesario poner el nombre de la función y los 
   - *aceleracion (double velocidad inicial, double velocidad final, double tiempo)*
   -  return (vf-vi)/t 
 2. Calor
-  -*calor (double incremento de calor, double incremento de temperatura)*
+  - *calor (double incremento de calor, double incremento de temperatura)*
   - return Q/T
 3. Ley de Hook
   - *hooke (double contante de resorte, double longitud de resorte)*
