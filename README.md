@@ -38,7 +38,10 @@ donde -L indica la ruta de la biblioteca con las funciones y -l indica el nombre
 
 
 ## Estructura de directorios 
+**Este fue el directorio utilizado para la creación de las bibliotecas. No es la estructura del directorio del repositorio**
+
 C:.
+
 │   main.cc  
 │  
 ├───app  
@@ -65,15 +68,15 @@ C:.
 │       newtontwo.o  
 │       rendimiento.o  
 │       torque.o  
-│  
+
 └───src  
-        aceleracion.cc  
-        Calor.cc  
-        hooke.cc  
-        LongitudOnda.cc  
-        newtontwo.cc  
-        rendimiento.cc  
-        torque.cc  
+│       aceleracion.cc  
+│       Calor.cc  
+│       hooke.cc  
+│       LongitudOnda.cc  
+│       newtontwo.cc  
+│       rendimiento.cc  
+│       torque.cc  
         
         
         
