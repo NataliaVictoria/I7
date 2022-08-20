@@ -2,30 +2,30 @@
 ##  Compilación de bibliotecas dinámica y estática
 ### Biblioteca estática
 Para compilar bibliotecas estáticas se deben utilizar los comandos:  
-**g++ -c . Ruta del archivo .cc -o Ruta del archivo.o -I ruta de la biblioteca**
-Por ejemplo: g++ -c .\src\calor.cc -o .\obj\hooke.o -I .\include
-Donde -c obtiene el código maquina del archivo .c, -o se emplea para el Código salida y -I Indica el directorio de la cabecera necesaria para compilar.
-Después se crea la biblioteca con el comando :
-**ar crs .\lib\static\fisica.lib .\obj\*.o**
-ar crs que creará el archivo compacto de los archivos .o en un archivo con extensión .lib
+**g++ -c . Ruta del archivo .cc -o Ruta del archivo.o -I ruta de la biblioteca**  
+Por ejemplo: g++ -c .\src\calor.cc -o .\obj\hooke.o -I .\include  
+Donde -c obtiene el código maquina del archivo .c, -o se emplea para el Código salida y -I Indica el directorio de la cabecera necesaria para compilar.  
+Después se crea la biblioteca con el comando:  
+**ar crs .\lib\static\fisica.lib .\obj\*.o**  
+ar crs que creará el archivo compacto de los archivos .o en un archivo con extensión .lib  
 
 ### Biblioteca dinámica
-Para compilar una biblioteca dimanica se deben utilizar los siguientes comandos:
-**g++ -c . Ruta del archivo .c -o Ruta del archivo.o -fPIC**
-Por ejemplo: g++ -c .\src\calor.cc -o .\obj\subtraction.o -fPIC
-Donde el fPIC indica al compilador que las direcciones no van a depender del código que invoque.
-Posteriormente se utiliza el comado:
-**g++ -shared .\lib\obj\*.o -o fisica.dll**
-g++- share que genera un archivo comprimido con extensión .dll. 
-Para compilarla es necesario indicar que existe una biblioteca y donde se encuentra en este caso el comando es:
-**g++ .\main.cc -o test -L . -l Fisica** 
-donde -L indica la ruta de la biblioteca con las funciones y -l indica el nombre de dicha biblioteca
+Para compilar una biblioteca dimanica se deben utilizar los siguientes comandos:  
+**g++ -c . Ruta del archivo .c -o Ruta del archivo.o -fPIC**  
+Por ejemplo: g++ -c .\src\calor.cc -o .\obj\subtraction.o -fPIC  
+Donde el fPIC indica al compilador que las direcciones no van a depender del código que invoque.  
+Posteriormente se utiliza el comado:  
+**g++ -shared .\lib\obj\*.o -o fisica.dll**  
+g++- share que genera un archivo comprimido con extensión .dll.   
+Para compilarla es necesario indicar que existe una biblioteca y donde se encuentra en este caso el comando es:  
+**g++ .\main.cc -o test -L . -l Fisica**   
+donde -L indica la ruta de la biblioteca con las funciones y -l indica el nombre de dicha biblioteca  
 
 
 
 ## Compilacion de aplicaciones que emplean:
 ### Bibliotecas estáticas
-1. Es necesario primero compilar el código fuente con el comando g++ -c
+1. Es necesario primero compilar el código fuente con el comando g++ -c  
 2. Después de debe crear la biblioteca mediante el comando ar que compactara los archivos .o en un archivo.lib
 3. Posteriormente el necesario compilar todo el ejecutable con el comando g++ main.cc -o Nombre del ejecutable -I Ruta relativa -L Ruta de la biblioteca -lnombre de la biblioteca 
 4. Listo la biblioteca podrá ser utilizada el ejecutable
@@ -47,33 +47,33 @@ C:.
 │       test_AceleracionRendimiento.cc  
 │       test_CalorLongitudOnda.cc  
 │       test_NewtonHookeTorque.cc  
-│
-├───include
-│       Fisica
-│
-├───lib
-│   ├───dynamic
-│   │       Fisica.dll
-│   │
-│   └───static
-│           Fisica.lib
-├───obj
-│       aceleracion.o
-│       Calor.o
-│       hooke.o
-│       LongitudOnda.o
-│       newtontwo.o
-│       rendimiento.o
-│       torque.o
-│
-└───src
-        aceleracion.cc
-        Calor.cc
-        hooke.cc
-        LongitudOnda.cc
-        newtontwo.cc
-        rendimiento.cc
-        torque.cc
+│  
+├───include  
+│       Fisica  
+│  
+├───lib  
+│   ├───dynamic  
+│   │       Fisica.dll  
+│   │  
+│   └───static  
+│           Fisica.lib  
+├───obj  
+│       aceleracion.o  
+│       Calor.o  
+│       hooke.o  
+│       LongitudOnda.o  
+│       newtontwo.o  
+│       rendimiento.o  
+│       torque.o  
+│  
+└───src  
+        aceleracion.cc  
+        Calor.cc  
+        hooke.cc  
+        LongitudOnda.cc  
+        newtontwo.cc  
+        rendimiento.cc  
+        torque.cc  
         
         
         
