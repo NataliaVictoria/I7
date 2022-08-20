@@ -5,6 +5,7 @@
  * @param k Constante de resorte
  * @param l Longitud de resorte
  * @returns k * l
+ * @author Rodrigo Vega Mora
  */
 double hooke(const double& k, const double& l);
 
@@ -12,6 +13,7 @@ double hooke(const double& k, const double& l);
  * @param a Aceleracion
  * @param m Masa
  * @returns m * a
+ * @author Rodrigo Vega Mora
  */
 double newtontwo(const double& a, const double& m);
 
@@ -19,6 +21,7 @@ double newtontwo(const double& a, const double& m);
  * @param F Módulo del vector fuerza
  * @param M Módulo del vector distancia
  * @returns F * M
+ * @author Rodrigo Vega Mora
  */
 double torque(const double& F, const double& M);
 
@@ -26,6 +29,7 @@ double torque(const double& F, const double& M);
  *  @param Q Incremento de calor en calorias 
  *  @param T  Incremento de temperatura en C°
  *  @returns double Q/T en C°
+ *  @author Natalia Victoria Nava 
  */
 double calor(const double& Q, const double& T);
 
@@ -33,6 +37,7 @@ double calor(const double& Q, const double& T);
  *  @param v Velocidad de onda  expresada en m/s
  *  @param f  Frecuencia espresada en Hz
  *  @returns double v/f en m
+ *  @author Natalia Victoria Nava
  */
 double longitud(const double& v, const double& f);
 
@@ -41,6 +46,7 @@ double longitud(const double& v, const double& f);
  *  @param velocidadFinal  Velocidad Final
  *  @param tiempo  Tiempo
  *  @returns (vf-vi)/t
+ *  @author Brayan Fernando Morales Morales
  */
 double aceleracion(const double& velocidadInicial, const double& velocidadFinal ,const double& tiempo);
 
@@ -48,6 +54,7 @@ double aceleracion(const double& velocidadInicial, const double& velocidadFinal 
  *  @param energia_totall Energia Total
  *  @param energia_Util  Energia Util
  *  @returns eu/eT
+ *  @author Brayan Fernando Morales Morales
  */
 double rendimiento(const double& energia_total ,const double& energia_Util);
 
